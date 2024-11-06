@@ -1,0 +1,15 @@
+first_number = int(input("Enter first number: "))
+second_number = int(input("Enter second number: "))
+operation = str(input('Enter operation: '))
+
+operations = {
+              '+' : first_number + second_number,
+              '-' : first_number - second_number,
+              '*' : first_number * second_number,
+              '/' : first_number / second_number,
+              'pow' : first_number ** second_number,
+              'mod' : first_number % second_number,
+              'div' : first_number // second_number,
+             }
+
+print(f'Result: {operations[operation]}')
